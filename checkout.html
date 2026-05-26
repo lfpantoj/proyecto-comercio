@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Checkout | TechNova</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <header>
+
+    <div class="logo">
+      <img src="image.png" alt="TechNova">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Productos</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
+
+    <button class="btn-login">
+      Checkout
+    </button>
+
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-text">
+
+      <h2>Finalizar compra</h2>
+
+      <p>
+        Completa tus datos y realiza el pago seguro
+        mediante Wompi.
+      </p>
+
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop">
+
+  </section>
+
+  <!-- CHECKOUT -->
+
+  <section class="checkout-section">
+
+  <div class="checkout-container">
+
+    <!-- FORMULARIO -->
+
+    <div class="checkout-form">
+
+      <h2>Información de compra</h2>
+
+      <p class="checkout-subtitle">
+        Completa tus datos para finalizar tu pedido
+        de forma segura.
+      </p>
+
+      <div class="input-group">
+        <label>Nombre completo</label>
+        <input type="text" placeholder="Ingresa tu nombre">
+      </div>
+
+      <div class="input-group">
+        <label>Correo electrónico</label>
+        <input type="email" placeholder="correo@ejemplo.com">
+      </div>
+
+      <div class="input-group">
+        <label>Dirección de envío</label>
+        <input type="text" placeholder="Dirección completa">
+      </div>
+
+      <div class="input-row">
+
+        <div class="input-group">
+          <label>Ciudad</label>
+          <input type="text" placeholder="Bogotá">
+        </div>
+
+        <div class="input-group">
+          <label>Código postal</label>
+          <input type="text" placeholder="110111">
+        </div>
+
+      </div>
+
+      <div class="input-group">
+
+        <label>Método de pago</label>
+
+        <select>
+
+          <option>
+            Seleccionar método de pago
+          </option>
+
+          <option>
+            Tarjeta débito/crédito
+          </option>
+
+          <option>
+            PSE
+          </option>
+
+          <option>
+            Nequi
+          </option>
+
+          <option>
+            Daviplata
+          </option>
+
+        </select>
+
+      </div>
+
+      <button id="payButton" class="checkout-btn">
+        Confirmar pago
+      </button>
+
+    </div>
+
+    <!-- RESUMEN -->
+
+    <div class="checkout-summary">
+
+      <h2>Resumen del pedido</h2>
+
+      <div class="summary-item">
+        <span>Laptop Gamer RTX</span>
+        <span>$4.500.000</span>
+      </div>
+
+      <div class="summary-item">
+        <span>Smartphone Pro X</span>
+        <span>$2.800.000</span>
+      </div>
+
+      <div class="summary-item">
+        <span>Audífonos inalámbricos</span>
+        <span>$350.000</span>
+      </div>
+
+      <hr>
+
+      <div class="summary-item">
+        <span>Envío</span>
+        <span>Gratis</span>
+      </div>
+
+      <div class="summary-total">
+        <span>Total</span>
+        <span>$7.650.000</span>
+      </div>
+
+      <div class="payment-icons">
+
+        <div class="payment-card">💳 Visa</div>
+        <div class="payment-card">🏦 PSE</div>
+        <div class="payment-card">📱 Nequi</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- RESUMEN -->
+
+  <section class="benefits">
+
+    <div class="benefit">
+
+      <h3>Subtotal</h3>
+
+      <p>$7.650.000</p>
+
+    </div>
+
+    <div class="benefit">
+
+      <h3>Envío</h3>
+
+      <p>Gratis</p>
+
+    </div>
+
+    <div class="benefit">
+
+      <h3>Total</h3>
+
+      <p>$7.650.000</p>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <h2>TechNova</h2>
+
+    <p>
+      Innovación y confianza en un solo clic
+    </p>
+
+    <br>
+
+    <p>
+      © 2026 TechNova - Plataforma de comercio electrónico.
+    </p>
+
+  </footer>
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    const payButton =
+      document.getElementById("payButton");
+
+    payButton.addEventListener("click", () => {
+
+      alert(
+        "Pago realizado correctamente ✅"
+      );
+
+      window.location.href = "index.html";
+
+    });
+
+  </script>
+
+</body>
+</html>

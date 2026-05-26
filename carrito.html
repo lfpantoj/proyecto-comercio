@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Carrito | TechNova</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- ========================= -->
+  <!-- NAVBAR -->
+  <!-- ========================= -->
+
+  <header>
+
+    <div class="logo">
+      <img src="image.png" alt="TechNova">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
+
+    <button class="btn-login">
+      Carrito (3)
+    </button>
+
+  </header>
+
+  <!-- ========================= -->
+  <!-- HERO -->
+  <!-- ========================= -->
+
+  <section class="hero">
+
+    <div class="hero-text">
+
+      <h2>Carrito de compras</h2>
+
+      <p>
+        Revisa los productos seleccionados y confirma tu compra
+        de forma segura y rápida.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="checkout.html">
+            <button class="btn-primary">
+                Finalizar compra
+            </button>
+        </a>
+
+        <a href="index.html">
+            <button class="btn-secondary">
+                Seguir comprando
+            </button>
+        </a>
+
+      </div>
+
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop">
+
+  </section>
+
+  <!-- ========================= -->
+  <!-- PRODUCTOS DEL CARRITO -->
+  <!-- ========================= -->
+
+  <section class="products">
+
+    <h2>Productos agregados</h2>
+
+    <div class="product-grid">
+
+      <!-- PRODUCTO 1 -->
+
+      <div class="product-card">
+
+        <img src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="product-info">
+
+          <h3>Laptop Gamer RTX</h3>
+
+          <p>
+            Intel Core i7 • RTX 4060 • 16GB RAM
+          </p>
+
+          <p class="price">$4.500.000</p>
+
+          <button class="btn-cart remove-btn">
+            Eliminar producto
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCTO 2 -->
+
+      <div class="product-card">
+
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="product-info">
+
+          <h3>Smartphone Pro X</h3>
+
+          <p>
+            AMOLED • 108MP • 256GB
+          </p>
+
+          <p class="price">$2.800.000</p>
+
+          <button class="btn-cart remove-btn">
+            Eliminar producto
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCTO 3 -->
+
+      <div class="product-card">
+
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="product-info">
+
+          <h3>Audífonos inalámbricos</h3>
+
+          <p>
+            Cancelación de ruido • Bluetooth 5.3
+          </p>
+
+          <p class="price">$350.000</p>
+
+          <button class="btn-cart remove-btn">
+            Eliminar producto
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ========================= -->
+  <!-- RESUMEN -->
+  <!-- ========================= -->
+
+  <section class="benefits">
+
+    <div class="benefit">
+
+      <h3>Subtotal</h3>
+
+      <p id="subtotal">
+        $7.650.000
+      </p>
+
+    </div>
+
+    <div class="benefit">
+
+      <h3>Envío</h3>
+
+      <p>
+        Gratis
+      </p>
+
+    </div>
+
+    <div class="benefit">
+
+      <h3>Total</h3>
+
+      <p id="total">
+        $7.650.000
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================= -->
+  <!-- FOOTER -->
+  <!-- ========================= -->
+
+  <footer>
+
+    <h2>TechNova</h2>
+
+    <p>
+      Innovación y confianza en un solo clic
+    </p>
+
+    <br>
+
+    <p>
+      © 2026 TechNova - Plataforma de comercio electrónico.
+    </p>
+
+  </footer>
+
+  <!-- ========================= -->
+  <!-- JAVASCRIPT -->
+  <!-- ========================= -->
+
+  <script>
+
+    // =========================
+    // ELIMINAR PRODUCTOS
+    // =========================
+
+    const removeButtons =
+      document.querySelectorAll(".remove-btn");
+
+    removeButtons.forEach(button => {
+
+      button.addEventListener("click", () => {
+
+        const productCard =
+          button.closest(".product-card");
+
+        productCard.remove();
+
+        alert("Producto eliminado del carrito ❌");
+
+      });
+
+    });
+
+    // =========================
+    // CONFIRMAR PAGO
+    // =========================
+
+    const payButton =
+      document.getElementById("payButton");
+
+    payButton.addEventListener("click", () => {
+
+      alert(
+        "Pago realizado correctamente ✅"
+      );
+
+    });
+
+  </script>
+
+</body>
+</html>
